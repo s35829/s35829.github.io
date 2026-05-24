@@ -24,7 +24,7 @@
     font-size: 3rem;
     border-radius: .2em;
     align-content: center;
-    text align: center;
+    text-align: center;
 }
 @keyframes obrot {
             from { translate: 0; }
