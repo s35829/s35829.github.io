@@ -3,22 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="karuzela.css">
     <title>Document</title>
 </head>
 <body>
-    <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 32 32" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-</style>
-<rect x="3" y="11" class="st0" width="26" height="14"/>
-<circle class="st0" cx="9" cy="18" r="3"/>
-<circle class="st0" cx="23" cy="18" r="3"/>
-<polygon class="st0" points="21,11 11,11 13,7 19,7 "/>
-<line class="st1" x1="15" y1="18" x2="17" y2="18"/>
-<line class="st1" x1="26" y1="10" x2="26" y2="11"/>
-<line class="st1" x1="23" y1="10" x2="23" y2="11"/>
-</svg>
+    <header>
+        <h1>Uśmiech!!</h1>
+    </header>
+    <div class="rozkladfot">
+        <svg viewBox="0 0 32 32" class="aparat">
+            <rect x="3" y="11" class="st0" width="26" height="14"/>
+            <circle class="st0" cx="20" cy="18" r="4.5"/>
+            <polygon class="st0" points="21,11 11,11 13,7 19,7 "/>
+            <polygon class="blysk" points="8,4 24,11 23,1 4,23 27,1 21,15 1,11 3"/>
+            <line class="st1" x1="8" y1="18" x2="12" y2="18"/>
+            <line class="st1" x1="26" y1="10" x2="26" y2="11"/>
+            <line class="st1" x1="23" y1="10" x2="23" y2="11"/>
+        </svg>
+    </div>
+    
 </body>
 </html>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const target = document.querySelector('.aparat .st1');
+    let triggered = false;
+    const animowany = document.querySelector('.blysk');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !triggered) {
+                triggered = true; // blokuje ponowne uruchomienie
+                document.body.classList.add('color-active');
+                animowany.classList.add('blysk-start');
+                observer.disconnect(); // odpinamy obserwator
+            }
+        });
+    }, {
+        threshold: 0.4
+    });
+
+    observer.observe(target);
+});
+</script>

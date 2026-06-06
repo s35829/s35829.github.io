@@ -1,11 +1,23 @@
 
+.body {
+    background-color: #ffffff; 
+    transition: stroke 0.9s ease;
+}
 .h1{
-    font-size: 110px;
+    font-size: 150px;
     margin: 0;
-    font-family: 'poppins';
+    font-family: 'new times roman', serif;
     text-transform: uppercase;
     color: rgba(219, 227, 234, 0.499);
 }
+
+h1{
+    font-size: 250px;
+    margin: 20px;
+    font-family: 'new times roman', serif;
+    color: rgb(0, 0, 0);
+}
+
 
 .Fotografia {
     display: flex;
@@ -52,9 +64,12 @@
     scrollbar-width: none;
     
 }
+
 .karuzela::-webkit-scrollbar {
     display: none;
 }
+
+
 .grupa {
     display: flex;
     align-items: center;
@@ -63,6 +78,8 @@
     animation: obrot 20s linear infinite;
     padding-right: 1em;
 }
+
+
 .zdj{
     flex: 0 0 5em;
     height: 250px;
@@ -73,34 +90,97 @@
     align-content: center;
     text-align: center;
 }
-@keyframes obrot {
-            from { translate: 0; }
-             to { translate: -100%; }
-        }
 
- .zdjecie-item {
+
+@keyframes obrot {
+    from { translate: 0; }
+    to { translate: -100%; }
+}
+
+
+.zdjecie-item {
             
-            height: 250px;
-            width: 250px;
-            border-radius: 12px;
+    height: 250px;
+    width: 250px;
+    border-radius: 12px;
            
             
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-            cursor: pointer;
-            display: block;
-        }
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    display: block;
+}
 
         
-        .zdjecie-item:hover {
-            transform: scale(1.08); 
-            
-        }
+.zdjecie-item:hover {
+    transform: scale(1.08); 
+}
 
       
-        .zdjecie-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.4s ease;
-        }
+.zdjecie-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+    
+ 
+.rozkladfot{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    margin-top: 50px;
+}
 
+body.color-active {
+    background-color: #181870; 
+    transition: stroke 0.9s ease;
+}
+
+.aparat .st1 {
+
+    transition: stroke 0.5s ease;
+}
+
+body.color-active .aparat .st1 {
+    stroke: red; /* kolor po aktywacji */
+}
+
+.blysk {
+    opacity: 0;
+    fill: white;
+}
+
+.blysk-start {
+    animation: blysk 2s;
+}
+
+@keyframes blysk {
+    0% { opacity: 0; }
+    30% { opacity: 0; }
+    31% { opacity: 1; }
+    55% { opacity: 1; }
+    56% { opacity: 0; }
+    61% { opacity: 0; }
+    62% { opacity: 1; }
+    69% { opacity: 1; }
+    70% { opacity: 0; }
+}
+
+.aparat{
+    
+    .st0 {
+        fill:none;
+        stroke:#000000;
+        stroke-width:2;
+        stroke-linejoin:round;
+        stroke-miterlimit:10;
+    }
+	.st1 {
+        fill:none;
+        stroke:#000000;
+        stroke-width:2;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-miterlimit:10;
+    }
+}
