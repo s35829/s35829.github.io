@@ -1,9 +1,23 @@
+
+.h1{
+    font-size: 70px;
+    font-family: 'New Century Schoolbook', TeX Gyre Schola, serif;
+    text-transform: uppercase;
+}
+
+.Fotografia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .karuzela {
     margin:100px auto;
     width: 90%;
     display: flex;
     overflow-x: auto;
     scrollbar-width: none;
+    
 }
 .karuzela::-webkit-scrollbar {
     display: none;
@@ -49,7 +63,7 @@
             
         }
 
-        /* Obrazek wewnątrz linku */
+      
         .zdjecie-item img {
             width: 100%;
             height: 100%;
