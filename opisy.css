@@ -1,3 +1,11 @@
+.podpis {
+    padding-left: 40px;
+    height: 130px;
+    display: flex;
+    align-items: flex-end;
+    color: #85af8ea9;
+}
+
 body {
     
     margin: 0;

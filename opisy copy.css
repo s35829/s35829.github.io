@@ -1,3 +1,13 @@
+
+.podpis {
+    padding-left: 40px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    color: #85af8ea9;
+}
+
+
 body {
     
     margin: 0;
@@ -71,6 +81,7 @@ header a:hover {
 p {
     text-align: right;
     font-family: Arial, sans-serif;
+    margin: 0;
 
 }
 h1{
