@@ -1,8 +1,9 @@
 
 
 body {
-    background-color: #ffffff; 
+    background-color: #cbbf9b; 
     transition: stroke 0.9s ease;
+    margin: 0;
 }
 .h1{
     font-size: 150px;
@@ -12,8 +13,13 @@ body {
     color: rgba(219, 227, 234, 0.499);
 }
 
+.us{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
 h1{
-    font-size: 250px;
+    font-size: 200px;
     margin: 20px;
     font-family: 'new times roman', serif;
     color: rgb(0, 0, 0);
@@ -25,6 +31,7 @@ h1{
     justify-content: center;
    
 }
+
 @keyframes kolory {
     0% { color: rgb(227, 174, 82); }
     8% { color: rgb(227, 174, 82); }
@@ -104,8 +111,6 @@ h1{
     height: 250px;
     width: 250px;
     border-radius: 12px;
-           
-            
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     cursor: pointer;
     display: block;
@@ -128,13 +133,12 @@ h1{
 .rozkladfot{
     display: flex;
     flex-wrap: wrap;
-    gap: 200px;
-    margin-top: 50px;
 }
 
 body.color-active {
-    background-color: #181870; 
+    background-color: #151629; 
     transition: stroke 0.9s ease;
+    margin: 0;
 }
 
 .aparat .st1 {
@@ -143,7 +147,7 @@ body.color-active {
 }
 
 body.color-active .aparat .st1 {
-    stroke: red; /* kolor po aktywacji */
+    stroke: rgb(255, 145, 0); 
 }
 
 .blysk {
@@ -176,6 +180,7 @@ body.color-active .aparat .st1 {
         stroke-linejoin:round;
         stroke-miterlimit:10;
     }
+
 	.st1 {
         fill:none;
         stroke:#000000;
@@ -193,4 +198,24 @@ body.color-active .aparat .st1 {
     display: flex;
     align-items: flex-end;
     color: #85af8ea9;
+}
+
+        
+header {
+    display: flex;
+    padding: 25px;
+    background-color: #03270a;
+}
+
+header a {
+    letter-spacing: 2px;
+    color: rgb(156, 159, 161);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+}
+
+header a:hover {
+    text-decoration: underline;
 }
