@@ -32,34 +32,6 @@ h1{
    
 }
 
-@keyframes kolory {
-    0% { color: rgb(227, 174, 82); }
-    8% { color: rgb(227, 174, 82); }
-    8.3% { color: orange; }
-    16.3% { color: orange; }
-    16.6% { color: yellow; }
-    24.6% { color: yellow; }
-    24.9% { color: green; }
-    33% { color: green; }
-    33.2% { color: red; }
-    41.2% { color: red; }
-    41.5% { color: rgb(14, 34, 81); }
-    49.5% { color: rgb(14, 34, 81); }
-    49.8% { color: yellow; }
-    57.8% { color: yellow; }
-    58.1% { color: green; }
-    66.1% { color: green; }
-    66.4% { color: red; }
-    74.4% { color: red; }
-    74.7% { color: rgb(232, 158, 209); }
-    82.7% { color: rgb(232, 158, 209); }
-    83% { color: rgb(213, 224, 230);}
-    91% { color: rgb(213, 224, 230); }
-    91.3% { color: rgb(223, 215, 150); }
-    100% { color: rgb(223, 215, 150); }
-
-
-}
 
 .karuzela {
     margin-top: 100px ;
