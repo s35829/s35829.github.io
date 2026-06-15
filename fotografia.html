@@ -50,10 +50,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting && !triggered) {
-                triggered = true; // blokuje ponowne uruchomienie
+                triggered = true; 
                 document.body.classList.add('color-active');
                 animowany.classList.add('blysk-start');
-                observer.disconnect(); // odpinamy obserwator
+                observer.disconnect(); 
             }
         });
     }, {

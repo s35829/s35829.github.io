@@ -1,0 +1,150 @@
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(0.5rem, 2vw, 1.5rem);
+  background: #09559885;
+}
+.nazwa {
+  font-size: clamp(30px, 3vw, 40px);
+  font-weight: bold;
+  font-family: 'copperplate gothic';
+}
+
+nav ul {
+    display: flex;
+    gap: clamp(0.5rem, 2vw, 2rem);
+    list-style: none;
+}
+
+nav a {
+  color: white;
+  font-size: clamp(1.5rem, 2vw, 2.0rem);
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #392ae2a1;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+
+.podpis {
+    padding-left: 40px;
+    height: 170px;
+    display: flex;
+    align-items: flex-end;
+    color: #85af8ea9;
+}
+
+header a {
+    letter-spacing: 2px;
+    color: rgb(178, 202, 218);
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f4f7fb;
+    color: #3a3a3a;
+    background-image: linear-gradient(rgba(34, 68, 140, 0.532), rgba(115, 115, 227, 0.044)), url('https://api.nga.gov/iiif/9eae6258-ec1c-442f-b353-a89cff510113/full/!800,800/0/default.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+
+.tyt {
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 10vh;
+    margin-bottom:10vh;
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #fffeff93;
+    color: #1e324d;
+    border: 4px solid #d3dce6;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.tipyy {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.tipy {
+    background: #d7c4c4d3;
+    padding: 1.4rem;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.tipy:hover {
+    transform: translateY(-4px);
+}
+
+.tipy h3 {
+    margin-bottom: 0.5rem;
+    color: #2f3b4c;
+}
+
+.podpis {
+    background-color: #3c5b7cc8;
+    padding: 40px;
+    margin-top: 3vh;
+    font-size: 2rem;
+    color: #b5dbbdda;
+    height: 3vh;
+}
+
+
+
+

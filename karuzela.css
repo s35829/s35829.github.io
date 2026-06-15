@@ -1,4 +1,116 @@
 
+.side{
+   
+    padding-left: 2vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    font-size: 1.3rem;
+
+    
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 0 6rem;
+    display: grid;
+    gap: 2rem;
+
+    background-color: #d1c2745d;
+}
+
+
+
+
+h2{
+    color:#373b89;
+    font-size: 5rem;
+    margin:0;
+}
+p{
+     color:#4c2374;
+    font-size: 2rem;
+    margin:0;
+    padding-left: 3vw;
+    max-width: 80vw;
+}
+
+.bialy{
+    background-color: rgba(240, 255, 255, 0.867);
+    padding: 2vw;
+}
+
+.kontener{
+    animation: nasuwanie linear both;
+    animation-timeline: view();
+}
+
+@keyframes nasuwanie{
+    from{height:150vh} 
+    to{height:10vh}
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(0.5rem, 2vw, 1.5rem);
+    background: #044379b7;
+     color: white;
+}
+
+.nazwa {
+    font-size: clamp(30px, 3vw, 40px);
+    font-weight: bold;
+    font-family: 'copperplate gothic';
+}
+
+nav ul {
+    display: flex;
+    gap: clamp(0.5rem, 2vw, 2rem);
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    font-size: clamp(1.5rem, 2vw, 2.0rem);
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+span {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 768px) {
+   header {
+    flex-wrap: wrap; /* pozwala headerowi się powiększać */
+  }
+  nav ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #40398ea1;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
 
 body {
     background-color: #cbbf9b; 
@@ -6,11 +118,10 @@ body {
     margin: 0;
 }
 .h1{
-    font-size: 150px;
+    font-size: 1000%;
     margin: 0;
     font-family: 'new times roman', serif;
-    text-transform: uppercase;
-    color: rgba(219, 227, 234, 0.499);
+    color: rgb(73, 21, 215);
 }
 
 .us{
@@ -19,10 +130,12 @@ body {
     margin-top: 150px;
 }
 h1{
-    font-size: 200px;
+    font-size: 40px auto;
     margin: 20px;
     font-family: 'new times roman', serif;
-    color: rgb(0, 0, 0);
+    color: rgb(8, 52, 40);
+    animation: ameryka linear both;
+    animation-timeline: view (50% 0%);
 }
 
 
@@ -34,13 +147,13 @@ h1{
 
 
 .karuzela {
-    margin-top: 100px ;
+    margin-top: 10px ;
     margin-bottom: 40px ;
-    margin-left: 70px ;
-    margin-right: 70px ;
-    width: 90%;
+    margin-left: 1vw;
+    margin-right:1vw;
+    width: 90vw;
     display: flex;
-    overflow-x: auto;
+    overflow: hidden;
     scrollbar-width: none;
     
 }
@@ -65,10 +178,9 @@ h1{
     height: 250px;
     padding: 10px;
     
-    font-size: 3rem;
+    
     border-radius: .2em;
     align-content: center;
-    text-align: center;
 }
 
 
@@ -165,26 +277,23 @@ body.color-active .aparat .st1 {
 
 
 .podpis {
-    padding-left: 40px;
-    height: 170px;
+    background-color: #2b625bc8;
+    padding: 40px;
+    margin-top: 3vw;
+    font-size: 2rem;
     display: flex;
     align-items: flex-end;
-    color: #85af8ea9;
+    color: #b5dbbdda;
 }
 
         
-header {
-    display: flex;
-    padding: 25px;
-    background-color: #03270a;
-}
+
 
 header a {
     letter-spacing: 2px;
-    color: rgb(156, 159, 161);
+    color: rgb(178, 202, 218);
     text-decoration: none;
     font-weight: bold;
-    font-size: 30px;
     font-style: italic;
 }
 

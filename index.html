@@ -3,12 +3,14 @@
    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotografia</title>
+    <title>inSane - zostań przy zdrowych zmysłach</title>
     <link rel="stylesheet" href="karuzela.css">
+    <link rel="icon" type="image/png" href="zdjecia/usmiech.png">
+
     <style>
         body {
             
-            background-image: linear-gradient(rgba(1, 1, 11, 0.85), rgba(1, 1, 11, 0.90)), url('https://www.artic.edu/iiif/2/aab287d3-238f-6bd9-7531-813d686a1bcb/full/1686,/0/default.jpg');
+            background-image: linear-gradient(rgba(34, 68, 140, 0.532), rgba(115, 115, 227, 0.044)), url('https://api.nga.gov/iiif/9fc88734-2f9a-4da8-8d46-2b570b201223/full/!800,800/0/default.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -20,7 +22,45 @@
 
 
    <body>
-       
+    <header class="header">
+        <a class="nazwa"  href="index.html">
+                inSANE
+            </a>
+
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="piosenki.html">Muzyka</a></li>
+                <li><a href="https://fundacjakot.pl/koty-do-adopcji/" target="_blank">Przyjaciel</a></li>
+                <li><a href="relaks.html">Obecność</a></li>
+            </ul>
+        </nav>
+
+        <div class="burger">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <div class="kontener"></div>
+
+    <div class="bialy" >
+        <h2 >Witaj na mojej stronie!</h2>
+        <p>Stworzyłam ją żeby pomagała w regulowaniu układu nerwowego w trudnych sytuacjach.
+            Wykorzystuj ile potrafisz i czuj się jak w domu!
+        </p>
+    <div class="side">
+        <div>
+            <a href="piosenki.html">
+                <h1>✬✬Inspiracje muzyczne na rozchmurzenie✬✬</h1>
+            </a>
+        </div>
+            <a href="relaks.html">
+                <h1>✬✬Zwolnij na chwilę✬✬</h1>
+            </a>
+    </div>
+            <h1>Moje chwile:</h1>
+           
         <div class="karuzela">
             <div class="grupa">
                 <div class="zdj"><a href="1.html" class="zdjecie">
@@ -99,19 +139,32 @@
                 </a></div>
             </div>
         </div>
+    
          
         <div class="Fotografia">
            
             <a href="fotografia.html">
-                <h1 class="h1">A ty co tu robisz? WYPAD</h1>
+                <h1>Minuta uśmiechania się poprawia samopoczucie!</h1>
             </a>
 
         </div>
+    </div>
+
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const menu = document.querySelector('nav ul');
+
+        burger.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        });
+</script>
+
 </body>
 
 <footer>
     <div class="podpis">
-    <p>Gabriela Niewiarowska s35829</p>
+    Gabriela Niewiarowska s35829
     </div>
 </footer>
 
